@@ -110,6 +110,7 @@ public class FlowLayout extends ViewGroup {
         if(widthMeasureSpecMode == MeasureSpec.EXACTLY){
             measureWidth = widthMeasureSpecSize;
         }
+        
         if (heightMeasureSpecMode == MeasureSpec.EXACTLY){
             measureHeight = heightMeasureSpecSize;
         }
