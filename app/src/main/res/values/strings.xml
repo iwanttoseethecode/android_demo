@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">android_dome</string>
+    <string name="title_activity_main1111">Main1111Activity</string>
+    <string name="title_activity_draw_pic">DrawPicActivity</string>
+
+    <string-array name="drawSelect">
+        <item>撤销</item>
+        <item>画线</item>
+        <item>撤销</item>
+        <item>撤销</item>
+        <item>撤销</item>
+        <item>撤销</item>
+        <item>撤销</item>
+        <item>撤销</item>
+        <item>撤销</item>
+        <item>撤销</item>
+    </string-array>
+
+    <array name="Shadow1">
+        <item>阴影显示</item>
+        <item>线性渐变</item>
+        <item>径向渐变</item>
+        <item>五子棋盘</item>
+        <item>扫描渐变</item>
+        <item>位图渐变</item>
+        <item>混合渐变</item>
+        <item>渐变和矩阵</item>
+    </array>
+
+    <array name="Layer1">
+        <item>图层测试</item>
+        <item>圆形头像</item>
+        <item>机器人边界头像</item>
+        <item>刮刮乐</item>
+    </array>
+
+    <string name="prompt">请选择</string>
+
+    <array name="chapter6">
+        <item>text自定义控件</item>
+    </array>
+
+    <array name="paint2">
+        <item>StrokeCap示例</item>
+        <item>stokeJoin示例</item>
+        <item>CornerPathEffect示例</item>
+        <item>CornerPathEffect DEMO曲线</item>
+        <item>DashPathEffect DEMO 效果</item>
+        <item>DiscretePathEffect DEMO效果</item>
+        <item>PathDashPathEffect效果</item>
+        <item>PathDashPathEffect DEMO效果</item>
+        <item>ComposePathEffect与SumPathEffect</item>
+        <item>SubpixelText Demo</item>
+    </array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luoling.android_dome">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".tagetcricle.TagetCricleActivity" />
+        <activity android:name=".propertyAnimaton.CoinActivity" />
+        <activity android:name=".propertyAnimaton.ChangeLayoutActivity" />
+        <activity android:name=".newAnimation.AnimationActivity" />
+        <activity android:name=".newAnimation.ValueAnimatorActivity" />
+        <activity android:name=".ButterKnife.ButterKnifeActivity" />
+        <activity android:name=".okhttpdome.OkhttpStudyActivity" />
+        <activity android:name=".customView.first_Paint_Canvas_Activity" />
+        <activity android:name=".customView.PathActivity" />
+        <activity android:name=".Graphics2D.BallMoveActivity" />
+        <activity android:name=".Graphics2D.CoordinateActivity" />
+        <activity android:name=".Graphics2D.ClipActivity" />
+        <activity android:name=".Graphics2D.BoomActivity" />
+        <activity android:name=".Graphics2D.WatchActivity" />
+        <activity android:name=".doublecache.TabletActivity" />
+        <activity android:name=".doublecache.DrawRectActivity" />
+        <activity android:name=".doublecache.drawapp.DrawPicActivity" />
+        <activity android:name=".chapter5.ShadowActivity" />
+        <activity android:name=".chapter5.After5_4Activity" />
+        <activity android:name=".chapter6.Chapter6Activity" />
+        <activity android:name=".RetrofitDemo.RetrofitActivity" />
+        <activity android:name=".circleprogressbar.CircleProgressBarActivity" />
+        <activity android:name=".customView.PaintDetailActivity" />
+        <activity android:name=".radar.RadarActivity" />
+        <activity android:name=".xformode.XformodeActivity"></activity>
+    </application>
+
+</manifest>

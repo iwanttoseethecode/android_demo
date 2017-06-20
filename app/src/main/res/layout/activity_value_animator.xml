@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.luoling.android_dome.newAnimation.ValueAnimatorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/runningboll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bule_cricle_shape" />
+
+        <Button
+            android:id="@+id/resetbtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="复位"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resetbtn"
+            android:layout_marginTop="10dp"
+            android:text="LinearInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn1"
+            android:layout_marginTop="10dp"
+            android:text="AccelerateDecelerateInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_marginTop="10dp"
+            android:text="AccelerateInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn3"
+            android:layout_marginTop="10dp"
+            android:text="DecelerateInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn4"
+            android:layout_marginTop="10dp"
+            android:text="AnticipateInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn5"
+            android:layout_marginTop="10dp"
+            android:text="CycleInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn6"
+            android:layout_marginTop="10dp"
+            android:text="BounceInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn7"
+            android:layout_marginTop="10dp"
+            android:text="AnticipateOvershootInterpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn8"
+            android:layout_marginTop="10dp"
+            android:text="自定义Interpolator"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn9"
+            android:layout_marginTop="10dp"
+            android:text="自定义抛物线运动"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

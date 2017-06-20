@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/redo"
+        android:title="撤销" />
+    <item
+        android:id="@+id/line"
+        android:title="画线" />
+    <item
+        android:id="@+id/rect"
+        android:title="画矩形" />
+    <item
+        android:id="@+id/circle"
+        android:title="画园" />
+    <item
+        android:id="@+id/oval"
+        android:title="画椭圆" />
+    <item
+        android:id="@+id/text"
+        android:title="文字" />
+    <item
+        android:id="@+id/black"
+        android:title="黑色" />
+    <item
+        android:id="@+id/red"
+        android:title="红色" />
+    <item
+        android:id="@+id/green"
+        android:title="绿色" />
+    <item
+        android:id="@+id/yellow"
+        android:title="黄色" />
+    <item
+        android:id="@+id/blue"
+        android:title="蓝色" />
+    <item
+        android:id="@+id/fill"
+        android:title="填充" />
+    <item
+        android:id="@+id/stroke"
+        android:title="描边" />
+</menu>

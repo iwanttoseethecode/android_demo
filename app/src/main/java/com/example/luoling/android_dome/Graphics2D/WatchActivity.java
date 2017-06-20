@@ -1,0 +1,23 @@
+package com.example.luoling.android_dome.Graphics2D;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.luoling.android_dome.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class WatchActivity extends AppCompatActivity {
+
+    @BindView(R.id.mWatchView)
+    WatchView mWatchView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_watch);
+        ButterKnife.bind(this);
+        mWatchView.run();
+    }
+}
