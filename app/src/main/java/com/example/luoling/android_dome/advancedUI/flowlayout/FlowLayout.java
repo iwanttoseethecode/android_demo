@@ -47,110 +47,101 @@ public class FlowLayout extends ViewGroup {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int widthMeasureSize = MeasureSpec.getSize(widthMeasureSpec);
-        int widthMeasureMode = MeasureSpec.getMode(widthMeasureSpec);
+        int widthMeasureSpecSize = MeasureSpec.getSize(widthMeasureSpec);
+        int widthMeasureSpecMode = MeasureSpec.getMode(widthMeasureSpec);
+        int heightMeasureSpecSize = MeasureSpec.getSize(heightMeasureSpec);
+        int heightMeasureSpecMode = MeasureSpec.getMode(heightMeasureSpec);
 
-        int heightMeasureSize = MeasureSpec.getSize(heightMeasureSpec);
-        int heightMeasureMode = MeasureSpec.getMode(heightMeasureSpec);
+        //最终测量的宽度
+        int measureWidth = 0;
+        //最终测量的高度
+        int measureHeight = 0;
+        //某一行的宽度
+        int lineWidth = 0;
+        //某一行高度
+        int lineheight = 0;
 
-        //本控件的最终测量宽度
-        int flowlayoutWidth = 0;
-        //本控件的最终测量高度
-        int flowlayoutHeight = 0;
+        //每一行的View集合
+        List<View> viewList = new ArrayList<>();
 
-        if (widthMeasureMode == MeasureSpec.EXACTLY && heightMeasureMode == MeasureSpec.EXACTLY){
-            flowlayoutWidth = widthMeasureSize;
-            flowlayoutHeight = heightMeasureSize;
-        }else{
-            //记录每一行的最大宽度
-            int lineWidth = 0;
-            //记录每一行的最大高度
-            int maxLineHeight = 0;
-            int childrenCount = getChildCount();
+        int childCount = getChildCount();
+        for (int i = 0;i<childCount;i++){
+            View childView = getChildAt(i);
+            measureChild(childView,widthMeasureSpec,heightMeasureSpec);
+            MarginLayoutParams lp= (MarginLayoutParams) childView.getLayoutParams();
+            int childWidth = childView.getMeasuredWidth()+lp.leftMargin+lp.rightMargin;
+            int childHeight = childView.getMeasuredHeight()+lp.topMargin+lp.bottomMargin;
 
-            //存放某一行的View
-            List<View> lineViewList = new ArrayList<>();
+            if (lineWidth+childWidth>widthMeasureSpecSize){
 
-            for (int i = 0; i < childrenCount; i++) {
-                View child = getChildAt(i);
-                measureChild(child,widthMeasureSpec,heightMeasureSpec);
+                measureWidth = Math.max(lineWidth,measureWidth);
+                measureHeight += lineheight;
 
-                MarginLayoutParams lp= (MarginLayoutParams) child.getLayoutParams();
-                int childWidth = child.getMeasuredWidth()+lp.leftMargin+lp.rightMargin;
-                int childHeight = child.getMeasuredHeight() + lp.topMargin + lp.bottomMargin;
+                heightRowList.add(lineheight);
+                flowLayoutList.add(viewList);
 
-                if (lineWidth + childWidth > widthMeasureSize){//这一行加上当前view的宽度已经大于容器的最大宽度
+                viewList = new ArrayList<>();
 
-                    flowlayoutWidth = Math.max(lineWidth,flowlayoutWidth);
-                    flowlayoutHeight += maxLineHeight;
 
-                    flowLayoutList.add(lineViewList);
+                lineWidth = childWidth;
+                lineheight = childHeight;
 
-                    lineViewList = new ArrayList<>();
-                    lineViewList.add(child);
+                viewList.add(childView);
 
-                    heightRowList.add(maxLineHeight);
+            }else{
 
-                    lineWidth = childWidth;
-                    maxLineHeight = childHeight;
+                viewList.add(childView);
 
-                }else{
-                    lineWidth += childWidth;
-                    maxLineHeight = Math.max(maxLineHeight,childHeight);
 
-                    lineViewList.add(child);
-
-                }
-
-                if (i == childrenCount-1){
-
-                    flowlayoutWidth = Math.max(lineWidth,flowlayoutWidth);
-                    flowlayoutHeight += maxLineHeight;
-
-                    flowLayoutList.add(lineViewList);
-                    heightRowList.add(maxLineHeight);
-                }
+                lineWidth += childWidth;
+                lineheight = Math.max(lineheight,childHeight);
             }
 
+            if (i == childCount-1){
 
+                heightRowList.add(lineheight);
+                flowLayoutList.add(viewList);
 
+                measureWidth = Math.max(lineWidth,measureWidth);
+                measureHeight += lineheight;
+            }
         }
 
-        setMeasuredDimension(flowlayoutWidth,flowlayoutHeight);
+        if(widthMeasureSpecMode == MeasureSpec.EXACTLY){
+            measureWidth = widthMeasureSpecSize;
+        }
+        if (heightMeasureSpecMode == MeasureSpec.EXACTLY){
+            measureHeight = heightMeasureSpecSize;
+        }
+
+        setMeasuredDimension(measureWidth,measureHeight);
     }
 
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
-    }
+
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        int left = 0,top = 0,right = 0,buttom = 0;
+        int curLeft = 0,curTop = 0;
+        int lines = flowLayoutList.size();
+        for (int i = 0;i<lines;i++){
+            List<View> viewList = flowLayoutList.get(i);
+            int lineViewSize = viewList.size();
 
-        int left=0,top=0,right=0,bottom=0;
-        int curLeft=0;
-        int curTop=0;
-
-        int lineCount = flowLayoutList.size();
-
-        for (int i = 0; i < lineCount; i++) {
-            List<View> lineViewList = flowLayoutList.get(i);
-
-            int count = lineViewList.size();
-            for (int j=0;j<count;j++){
-                View childView = lineViewList.get(j);
-                MarginLayoutParams layoutParams = (MarginLayoutParams) childView.getLayoutParams();
-
-                left = curLeft + layoutParams.leftMargin;
-                top = curTop + layoutParams.topMargin;
+            for (int j = 0; j<lineViewSize;j++){
+                View childView = viewList.get(j);
+                MarginLayoutParams lp= (MarginLayoutParams) childView.getLayoutParams();
+                left = curLeft+lp.leftMargin;
+                top = curTop+lp.topMargin;
                 right = left + childView.getMeasuredWidth();
-                bottom = top + childView.getMeasuredHeight();
-                childView.layout(left,top,right,bottom);
-                curLeft += childView.getMeasuredWidth() + layoutParams.leftMargin + layoutParams.rightMargin;
+                buttom = top + childView.getMeasuredHeight();
+                childView.layout(left,top,right,buttom);
+                curLeft = right+lp.rightMargin;
             }
             curLeft = 0;
             curTop += heightRowList.get(i);
         }
+
         flowLayoutList.clear();
         heightRowList.clear();
     }
