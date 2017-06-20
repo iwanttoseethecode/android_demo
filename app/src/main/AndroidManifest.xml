@@ -50,7 +50,9 @@
         <activity android:name=".circleprogressbar.CircleProgressBarActivity" />
         <activity android:name=".customView.PaintDetailActivity" />
         <activity android:name=".radar.RadarActivity" />
-        <activity android:name=".xformode.XformodeActivity"></activity>
+        <activity android:name=".xformode.XformodeActivity" />
+        <activity android:name=".advancedUI.flowlayout.FlowLayoutActivity" />
+        <activity android:name=".advancedUI.waterfallLayout.WaterfallActivity"></activity>
     </application>
 
 </manifest>

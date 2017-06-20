@@ -17,6 +17,8 @@ import com.example.luoling.android_dome.Graphics2D.CoordinateActivity;
 import com.example.luoling.android_dome.Graphics2D.WatchActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
+import com.example.luoling.android_dome.advancedUI.flowlayout.FlowLayoutActivity;
+import com.example.luoling.android_dome.advancedUI.waterfallLayout.WaterfallActivity;
 import com.example.luoling.android_dome.chapter5.After5_4Activity;
 import com.example.luoling.android_dome.chapter5.ShadowActivity;
 import com.example.luoling.android_dome.chapter6.Chapter6Activity;
@@ -91,6 +93,8 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("雷达扫描",RadarActivity.class));
        mList.add(new Model("图层", After5_4Activity.class));
        mList.add(new Model("自定义控件", Chapter6Activity.class));
+       mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
+       mList.add(new Model("瀑布流布局", WaterfallActivity.class));
 
    }
 
