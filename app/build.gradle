@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.example.luoling.android_dome"
@@ -21,17 +20,17 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
-    compile 'com.jakewharton:butterknife:8.4.0'
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
-    compile 'com.squareup.okio:okio:1.10.0'
-    compile 'com.google.code.gson:gson:2.7'
-    compile 'com.android.support:design:25.0.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.google.android.gms:play-services-appindexing:8.1.0'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okio:okio:1.10.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.android.support:design:26.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestImplementation 'junit:junit:4.12'
+    annotationProcessor   'com.jakewharton:butterknife-compiler:8.4.0'
 }
