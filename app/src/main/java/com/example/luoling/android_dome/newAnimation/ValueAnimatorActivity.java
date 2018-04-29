@@ -15,6 +15,7 @@ package com.example.luoling.android_dome.newAnimation;
 
 
 import android.animation.ObjectAnimator;
+import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.graphics.PointF;
@@ -32,8 +33,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.luoling.android_dome.R;
-
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ValueAnimatorActivity extends Activity implements View.OnClickListener{
 
@@ -131,15 +130,33 @@ public class ValueAnimatorActivity extends Activity implements View.OnClickListe
                 ObjectAnimator objectAnimator9 = ObjectAnimator.ofFloat(RunningbollTxtView,"translationY",200f,400f);
                 objectAnimator9.setDuration(5000);
                 objectAnimator9.setInterpolator(new MyInterpolator(3));
+                objectAnimator9.setEvaluator(new TypeEvaluator() {
+                    @Override
+                    public Object evaluate(float fraction, Object startValue, Object endValue) {
+                        return null;
+                    }
+                });
                 objectAnimator9.start();
 
                 break;
             case R.id.btn10://自定义抛物线运动
                 //PointF数值为float,Point数值为int,我们这里选择PointF
                 ValueAnimator valueAnimator = new ValueAnimator();
-                valueAnimator.setObjectValues((new PointF(0,0)));
+                valueAnimator.setObjectValues(new PointF(0,0));
                 valueAnimator.setInterpolator(new LinearInterpolator());
                 valueAnimator.setEvaluator(new MyEvalutor());
+//                valueAnimator.setObjectValues(new PointF(0,0),new PointF(100,100));
+//                final PointF pointF = new PointF();
+//                valueAnimator.setEvaluator(new TypeEvaluator<PointF>() {
+//                    @Override
+//                    public PointF evaluate(float fraction, PointF startValue, PointF endValue) {
+//                        pointF.x = 100f*(fraction*5);
+//                        pointF.y = 0.5f*9.8f*(fraction*5)*(fraction*5);
+//                        pointF.y = 10f*0.5f*9.8f*(fraction*5)*(fraction*5);
+//                        return pointF;
+//                    }
+//
+//                });
                 valueAnimator.setDuration(5000);
                 valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override

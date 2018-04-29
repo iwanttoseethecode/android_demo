@@ -111,6 +111,7 @@ public class first_Paint_Canvas_Activity extends Activity {
         Rect dst = new Rect(0, bmpHeight, bmpWidth * 3, bmpHeight * 3 + bmpHeight);
         //从bitmap中抠出一块大小区域为src的图片并绘制到canvas的dst处
         canvas.drawBitmap(bmp, src, dst, null);
+
         iv.setImageBitmap(bmpBuffer);
     }
 
