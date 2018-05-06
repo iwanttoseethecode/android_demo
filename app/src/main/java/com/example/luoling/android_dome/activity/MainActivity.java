@@ -32,7 +32,9 @@ import com.example.luoling.android_dome.customView.first_Paint_Canvas_Activity;
 import com.example.luoling.android_dome.doublecache.DrawRectActivity;
 import com.example.luoling.android_dome.doublecache.TabletActivity;
 import com.example.luoling.android_dome.newAnimation.AnimationActivity;
+import com.example.luoling.android_dome.newAnimation.OverPageActivity;
 import com.example.luoling.android_dome.okhttpdome.OkhttpStudyActivity;
+import com.example.luoling.android_dome.praise.PraiseActivity;
 import com.example.luoling.android_dome.propertyAnimaton.ChangeLayoutActivity;
 import com.example.luoling.android_dome.propertyAnimaton.CoinActivity;
 import com.example.luoling.android_dome.radar.RadarActivity;
@@ -80,6 +82,8 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("布局变换动画", ChangeLayoutActivity.class));
        mList.add(new Model("硬币动画视图", CoinActivity.class));
        mList.add(new Model("动画视图",AnimationActivity.class));
+       mList.add(new Model("翻页动画", OverPageActivity.class));
+       mList.add(new Model("点赞动画", PraiseActivity.class));
        mList.add(new Model("Canvas、Paint使用",first_Paint_Canvas_Activity.class));
        mList.add(new Model("Paint的详细应用",PaintDetailActivity.class));
        mList.add(new Model("自定义环形进度条",CircleProgressBarActivity.class));

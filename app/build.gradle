@@ -32,5 +32,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     androidTestImplementation 'junit:junit:4.12'
-    annotationProcessor   'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }
