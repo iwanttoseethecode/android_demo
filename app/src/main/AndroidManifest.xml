@@ -55,7 +55,8 @@
         <activity android:name=".advancedUI.waterfallLayout.WaterfallActivity" />
         <activity android:name=".newAnimation.OverPageActivity" />
         <activity android:name=".praise.PraiseActivity" />
-        <activity android:name=".splashAnimation.SplashAnimationActivity"></activity>
+        <activity android:name=".splashAnimation.SplashAnimationActivity" />
+        <activity android:name=".ScrollPoster.ScrollPosterActivity"></activity>
     </application>
 
 </manifest>

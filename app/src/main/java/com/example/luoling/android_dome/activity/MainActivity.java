@@ -18,6 +18,7 @@ import com.example.luoling.android_dome.Graphics2D.CoordinateActivity;
 import com.example.luoling.android_dome.Graphics2D.WatchActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
+import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
 import com.example.luoling.android_dome.advancedUI.flowlayout.FlowLayoutActivity;
 import com.example.luoling.android_dome.advancedUI.waterfallLayout.WaterfallActivity;
 import com.example.luoling.android_dome.chapter5.After5_4Activity;
@@ -86,6 +87,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("翻页动画", OverPageActivity.class));
        mList.add(new Model("点赞动画", PraiseActivity.class));
        mList.add(new Model("炫酷的开场动画", SplashAnimationActivity.class));
+       mList.add(new Model("滑动海报动画", ScrollPosterActivity.class));
        mList.add(new Model("Canvas、Paint使用",first_Paint_Canvas_Activity.class));
        mList.add(new Model("Paint的详细应用",PaintDetailActivity.class));
        mList.add(new Model("自定义环形进度条",CircleProgressBarActivity.class));
