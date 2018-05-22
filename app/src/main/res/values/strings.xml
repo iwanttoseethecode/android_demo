@@ -25,6 +25,8 @@
         <item>位图渐变</item>
         <item>混合渐变</item>
         <item>渐变和矩阵</item>
+        <item>文字高亮</item>
+        <item>图片放大镜</item>
     </array>
 
     <array name="Layer1">
