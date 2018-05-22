@@ -68,4 +68,23 @@
         android:layout_below="@id/selectSpinner"
         android:visibility="gone" />
 
+    <com.example.luoling.android_dome.chapter5.HighLightLinearGradientTextView
+        android:id="@+id/highLightLinearGradientTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectSpinner"
+        android:gravity="center"
+        android:text="歡迎大家觀看跑馬丁高亮文字控件"
+        android:textSize="30sp"
+        android:textColor="#666666"
+        android:background="#000000"
+        android:visibility="gone"/>
+
+    <com.example.luoling.android_dome.chapter5.ZoomImageView
+        android:id="@+id/zoomImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectSpinner"
+        android:visibility="gone"/>
+
 </RelativeLayout>

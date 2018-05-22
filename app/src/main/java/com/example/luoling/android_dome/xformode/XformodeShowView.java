@@ -84,6 +84,7 @@ public class XformodeShowView extends View {
         super.onDraw(canvas);
         //设置背景色
         //canvas.drawARGB(255, 139, 197, 186);
+        setLayerType(LAYER_TYPE_HARDWARE,null);
 
         int canvasWidth = canvas.getWidth();
         int canvasHeight = canvas.getHeight();
@@ -92,7 +93,6 @@ public class XformodeShowView extends View {
             for(int column = 0; column < 4; column++){
                 canvas.save();
                 int layer = canvas.saveLayer(0, 0, canvasWidth, canvasHeight, null, Canvas.ALL_SAVE_FLAG);
-                mPaint.setXfermode(null);
                 int index = row * 4 + column;
                 float translateX = (mItemSize + mItemHorizontalOffset) * column;
                 float translateY = (mItemSize + mItemVerticalOffset) * row;

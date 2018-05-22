@@ -33,6 +33,10 @@ public class ShadowActivity extends AppCompatActivity implements AdapterView.OnI
     ComposeShaderView composeShaderView;
     @BindView(R.id.gradientAndMatrixView)
     GradientAndMatrixView gradientAndMatrixView;
+    @BindView(R.id.highLightLinearGradientTextView)
+    HighLightLinearGradientTextView highLightLinearGradientTextView;
+    @BindView(R.id.zoomImageView)
+    ZoomImageView zoomImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,8 @@ public class ShadowActivity extends AppCompatActivity implements AdapterView.OnI
         viewSparseArray.put(6, bitmapShaderView);
         viewSparseArray.put(7, composeShaderView);
         viewSparseArray.put(8, gradientAndMatrixView);
+        viewSparseArray.put(9, highLightLinearGradientTextView);
+        viewSparseArray.put(10,zoomImageView);
     }
 
     public void setVisibility(int n) {
@@ -83,8 +89,12 @@ public class ShadowActivity extends AppCompatActivity implements AdapterView.OnI
             setVisibility(6);
         } else if (name.equals("混合渐变")) {
             setVisibility(7);
-        } else if (name.equals("渐变和矩阵")){
+        } else if (name.equals("渐变和矩阵")) {
             setVisibility(8);
+        } else if (name.equals("文字高亮")) {
+            setVisibility(9);
+        } else if (name.equals("图片放大镜")){
+            setVisibility(10);
         }
     }
 

@@ -56,7 +56,8 @@
         <activity android:name=".newAnimation.OverPageActivity" />
         <activity android:name=".praise.PraiseActivity" />
         <activity android:name=".splashAnimation.SplashAnimationActivity" />
-        <activity android:name=".ScrollPoster.ScrollPosterActivity"></activity>
+        <activity android:name=".ScrollPoster.ScrollPosterActivity" />
+        <activity android:name=".xformode.XformodeDemoActivity"></activity>
     </application>
 
 </manifest>

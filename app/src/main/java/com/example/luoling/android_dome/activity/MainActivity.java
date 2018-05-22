@@ -42,6 +42,7 @@ import com.example.luoling.android_dome.radar.RadarActivity;
 import com.example.luoling.android_dome.splashAnimation.SplashAnimationActivity;
 import com.example.luoling.android_dome.tagetcricle.TagetCricleActivity;
 import com.example.luoling.android_dome.xformode.XformodeActivity;
+import com.example.luoling.android_dome.xformode.XformodeDemoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,13 +96,14 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("来回滚动刷新", BallMoveActivity.class));
        mList.add(new Model("坐标转换", CoordinateActivity.class));
        mList.add(new Model("Xformode效果展示",XformodeActivity.class));
+       mList.add(new Model("Xformode案例", XformodeDemoActivity.class));
        mList.add(new Model("图片剪切", ClipActivity.class));
        mList.add(new Model("爆炸效果动画", BoomActivity.class));
        mList.add(new Model("自定义时钟", WatchActivity.class));
        mList.add(new Model("写字板", TabletActivity.class));
        mList.add(new Model("画矩形", DrawRectActivity.class));
        mList.add(new Model("阴影", ShadowActivity.class));
-       mList.add(new Model("雷达扫描",RadarActivity.class));
+       mList.add(new Model("雷达扫描和水波纹按钮",RadarActivity.class));
        mList.add(new Model("图层", After5_4Activity.class));
        mList.add(new Model("自定义控件", Chapter6Activity.class));
        mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
