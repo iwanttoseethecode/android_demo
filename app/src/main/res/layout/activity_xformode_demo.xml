@@ -6,17 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".xformode.XformodeDemoActivity">
 
+    <Spinner
+        android:id="@+id/selectSpinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:entries="@array/xformodeString"
+        android:prompt="@string/prompt"/>
+
     <com.example.luoling.android_dome.xformode.HeartMapView
-        android:id="@+id/firstView"
+        android:id="@+id/heartMapView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@id/selectSpinner"
+        android:layout_centerHorizontal="true"/>
 
     <com.example.luoling.android_dome.xformode.CircleWaveView
+        android:id="@+id/circleWaveView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/firstView"
+        android:layout_below="@id/selectSpinner"
+        android:layout_marginTop="30dp"/>
+
+    <com.example.luoling.android_dome.xformode.EraserView
+        android:id="@+id/eraserView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <com.example.luoling.android_dome.xformode.GuaGuaCardView
+        android:id="@+id/guaguaCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectSpinner"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
 
 </RelativeLayout>
