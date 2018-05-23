@@ -336,7 +336,7 @@ public class MyView extends View {
 
         Paint paint = new Paint();
         paint.setColor(Color.GREEN);
-        String text = "动脑学院高级UI";
+        String text = "UI效果测试";
         paint.setTextSize(100);
 
         paint.setSubpixelText(false);

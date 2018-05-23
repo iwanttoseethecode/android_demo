@@ -54,4 +54,11 @@
         <item>ComposePathEffect与SumPathEffect</item>
         <item>SubpixelText Demo</item>
     </array>
+
+    <string-array name="xformodeString">
+        <item>心电图</item>
+        <item>波浪圆球图</item>
+        <item>橡皮檫控件</item>
+        <item>刮刮卡</item>
+    </string-array>
 </resources>

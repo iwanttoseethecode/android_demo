@@ -1,7 +1,6 @@
 package com.example.luoling.android_dome.advancedUI.waterfallLayout;
 
 import android.content.Context;
-import android.support.annotation.Px;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,38 +41,38 @@ public class WaterfallLayout extends ViewGroup {
         int measureWidth = 0;
         int measureHeight = 0;
 
+        measureChildren(widthMeasureSpec,heightMeasureSpec);
+
+        mChildWidth = (widthMeasureSpecSize - (mColumns-1)*mHorizontalSpace)/mColumns;
+
+        int childCount = getChildCount();
+        if (childCount < mColumns){
+            measureWidth = mChildWidth * childCount + (childCount-1)*mHorizontalSpace;
+        }else{
+            measureWidth = widthMeasureSpecSize;
+        }
+
+        clearTop();
+
+        for (int i = 0; i < childCount; i++) {
+            View child = getChildAt(i);
+
+            int childHeight = child.getMeasuredHeight() * mChildWidth / child.getMeasuredWidth();
+
+            int minColumn = minHeightColumn();
+            WaterfallLayoutParams wp = (WaterfallLayoutParams) child.getLayoutParams();
+            wp.left = minColumn *(mChildWidth+mHorizontalSpace);
+            wp.top = mTop[minColumn];
+            wp.right = wp.left + mChildWidth;
+            wp.bottom = wp.top + childHeight;
+
+            mTop[minColumn] += mVerticalSpace + childHeight;
+        }
+        measureHeight = maxHeight();
+
         if (widthMeasureSpecMode == MeasureSpec.EXACTLY && heightMeasureSpecMode == MeasureSpec.EXACTLY){
             measureWidth = widthMeasureSpecSize;
             measureHeight = heightMeasureSpecSize;
-        }else{
-            measureChildren(widthMeasureSpec,heightMeasureSpec);
-
-            mChildWidth = (widthMeasureSpecSize - (mColumns-1)*mHorizontalSpace)/mColumns;
-
-            int childCount = getChildCount();
-            if (childCount < mColumns){
-                measureWidth = mChildWidth * childCount + (childCount-1)*mHorizontalSpace;
-            }else{
-                measureWidth = widthMeasureSpecSize;
-            }
-
-            clearTop();
-
-            for (int i = 0; i < childCount; i++) {
-                View child = getChildAt(i);
-
-                int childHeight = child.getMeasuredHeight() * mChildWidth / child.getMeasuredWidth();
-
-                int minColumn = minHeightColumn();
-                WaterfallLayoutParams wp = (WaterfallLayoutParams) child.getLayoutParams();
-                wp.left = minColumn *(mChildWidth+mHorizontalSpace);
-                wp.top = mTop[minColumn];
-                wp.right = wp.left + mChildWidth;
-                wp.bottom = wp.top + childHeight;
-
-                mTop[minColumn] += mVerticalSpace + childHeight;
-            }
-            measureHeight = maxHeight();
         }
 
         setMeasuredDimension(measureWidth,measureHeight);
