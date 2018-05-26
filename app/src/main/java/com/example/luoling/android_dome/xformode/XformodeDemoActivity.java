@@ -43,7 +43,7 @@ public class XformodeDemoActivity extends AppCompatActivity implements AdapterVi
         viewSparseArray.put(0, heartMapView);
         viewSparseArray.put(1, circleWaveView);
         viewSparseArray.put(2, eraserView);
-        viewSparseArray.put(3,guaguaCard);
+        viewSparseArray.put(3, guaguaCard);
     }
 
     public void setVisible(int num) {
@@ -66,7 +66,7 @@ public class XformodeDemoActivity extends AppCompatActivity implements AdapterVi
             setVisible(1);
         } else if (TextUtils.equals(selectName, "橡皮檫控件")) {
             setVisible(2);
-        } else  if (TextUtils.equals(selectName,"刮刮卡")){
+        } else if (TextUtils.equals(selectName, "刮刮卡")) {
             setVisible(3);
         }
 

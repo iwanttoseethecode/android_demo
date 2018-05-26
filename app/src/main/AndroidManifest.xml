@@ -57,7 +57,8 @@
         <activity android:name=".praise.PraiseActivity" />
         <activity android:name=".splashAnimation.SplashAnimationActivity" />
         <activity android:name=".ScrollPoster.ScrollPosterActivity" />
-        <activity android:name=".xformode.XformodeDemoActivity"></activity>
+        <activity android:name=".xformode.XformodeDemoActivity" />
+        <activity android:name=".colorFilter.ColorFilterActivity"></activity>
     </application>
 
 </manifest>
