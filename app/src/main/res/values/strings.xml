@@ -61,4 +61,29 @@
         <item>橡皮檫控件</item>
         <item>刮刮卡</item>
     </string-array>
+
+    <string-array name="maskOrColorFilter">
+        <item>模糊-normal</item>
+        <item>模糊-solid</item>
+        <item>模糊-outer</item>
+        <item>模糊-inner</item>
+        <item>浮雕效果</item>
+        <item>滤镜-颜色通道加法</item>
+        <item>滤镜-底片效果</item>
+        <item>滤镜-颜色增强</item>
+        <item>滤镜-黑白照片</item>
+        <item>滤镜-发色效果</item>
+        <item>滤镜-复古效果</item>
+        <item>滤镜-过滤颜色通道</item>
+        <item>滤镜-颜色系数缩放</item>
+        <item>滤镜-颜色饱和度</item>
+        <item>滤镜-某个颜色通道角度旋转</item>
+        <item>亮度-红色亮度修改</item>
+        <item>亮度-绿色亮度修改</item>
+        <item>亮度-蓝色亮度修改</item>
+        <item>亮度-rgb亮度修改</item>
+        <item>PorterDuff-蓝色dst_in</item>
+        <item>PorterDuff-绿色src_atop</item>
+        <item>PorterDuff-红色src_in</item>
+    </string-array>
 </resources>

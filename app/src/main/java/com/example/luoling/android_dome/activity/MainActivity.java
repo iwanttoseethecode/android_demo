@@ -25,6 +25,7 @@ import com.example.luoling.android_dome.chapter5.After5_4Activity;
 import com.example.luoling.android_dome.chapter5.ShadowActivity;
 import com.example.luoling.android_dome.chapter6.Chapter6Activity;
 import com.example.luoling.android_dome.circleprogressbar.CircleProgressBarActivity;
+import com.example.luoling.android_dome.colorFilter.ColorFilterActivity;
 import com.example.luoling.android_dome.commondapter.CommonAdapter;
 import com.example.luoling.android_dome.commondapter.ViewHolder;
 import com.example.luoling.android_dome.customView.PaintDetailActivity;
@@ -97,6 +98,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("坐标转换", CoordinateActivity.class));
        mList.add(new Model("Xformode效果展示",XformodeActivity.class));
        mList.add(new Model("Xformode案例", XformodeDemoActivity.class));
+       mList.add(new Model("ColorFilter效果", ColorFilterActivity.class));
        mList.add(new Model("图片剪切", ClipActivity.class));
        mList.add(new Model("爆炸效果动画", BoomActivity.class));
        mList.add(new Model("自定义时钟", WatchActivity.class));
