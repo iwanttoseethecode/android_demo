@@ -58,7 +58,8 @@
         <activity android:name=".splashAnimation.SplashAnimationActivity" />
         <activity android:name=".ScrollPoster.ScrollPosterActivity" />
         <activity android:name=".xformode.XformodeDemoActivity" />
-        <activity android:name=".colorFilter.ColorFilterActivity"></activity>
+        <activity android:name=".colorFilter.ColorFilterActivity" />
+        <activity android:name=".drawble.DrawbleActivity"></activity>
     </application>
 
 </manifest>

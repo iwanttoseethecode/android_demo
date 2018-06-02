@@ -33,6 +33,7 @@ import com.example.luoling.android_dome.customView.PathActivity;
 import com.example.luoling.android_dome.customView.first_Paint_Canvas_Activity;
 import com.example.luoling.android_dome.doublecache.DrawRectActivity;
 import com.example.luoling.android_dome.doublecache.TabletActivity;
+import com.example.luoling.android_dome.drawble.DrawbleActivity;
 import com.example.luoling.android_dome.newAnimation.AnimationActivity;
 import com.example.luoling.android_dome.newAnimation.OverPageActivity;
 import com.example.luoling.android_dome.okhttpdome.OkhttpStudyActivity;
@@ -100,6 +101,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("Xformode案例", XformodeDemoActivity.class));
        mList.add(new Model("ColorFilter效果", ColorFilterActivity.class));
        mList.add(new Model("图片剪切", ClipActivity.class));
+       mList.add(new Model("自定义drawable", DrawbleActivity.class));
        mList.add(new Model("爆炸效果动画", BoomActivity.class));
        mList.add(new Model("自定义时钟", WatchActivity.class));
        mList.add(new Model("写字板", TabletActivity.class));
