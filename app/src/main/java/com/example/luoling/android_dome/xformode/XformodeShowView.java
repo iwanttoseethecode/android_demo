@@ -91,7 +91,7 @@ public class XformodeShowView extends View {
 
         for(int row = 0; row < 4; row++){
             for(int column = 0; column < 4; column++){
-                canvas.save();
+//                canvas.save();
                 int layer = canvas.saveLayer(0, 0, canvasWidth, canvasHeight, null, Canvas.ALL_SAVE_FLAG);
                 int index = row * 4 + column;
                 float translateX = (mItemSize + mItemHorizontalOffset) * column;
