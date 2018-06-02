@@ -3,14 +3,13 @@ package com.example.luoling.android_dome.drawble;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class GallaryHorizonalScrollView extends HorizontalScrollView implements View.OnTouchListener {
+public class GallaryHorizonalScrollView extends HorizontalScrollView{
 
     private LinearLayout container;
     private int centerX;
@@ -30,7 +29,6 @@ public class GallaryHorizonalScrollView extends HorizontalScrollView implements 
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         container = new LinearLayout(getContext());
         container.setLayoutParams(params);
-        setOnTouchListener(this);
     }
 
     @Override
@@ -41,15 +39,13 @@ public class GallaryHorizonalScrollView extends HorizontalScrollView implements 
         centerX = getWidth()/2;
         //中心图片的左边界
         centerX = centerX - icon_width/2;
-//        container.setPadding(centerX,0,centerX,0);
+        container.setPadding(centerX,0,centerX,0);
     }
 
     @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_MOVE){
-            reveal();
-        }
-        return true;
+    protected void onScrollChanged(int l, int t, int oldl, int oldt) {
+        super.onScrollChanged(l, t, oldl, oldt);
+        reveal();
     }
 
     private void reveal() {

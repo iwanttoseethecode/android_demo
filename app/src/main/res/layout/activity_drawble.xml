@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <com.example.luoling.android_dome.drawble.GallaryHorizonalScrollView
+        android:layout_marginTop="10dp"
         android:id="@+id/ghsv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
