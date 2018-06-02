@@ -72,6 +72,13 @@ public class RevealDrawble extends Drawable {
     }
 
     @Override
+    protected boolean onLevelChange(int level) {
+        //回调重绘自己
+        invalidateSelf();
+        return true;
+    }
+
+    @Override
     public void setAlpha(int alpha) {
 
     }
