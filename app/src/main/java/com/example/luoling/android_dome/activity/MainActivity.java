@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.luoling.android_dome.ButterKnife.ButterKnifeActivity;
+import com.example.luoling.android_dome.DragBubble.DragBubleActivity;
 import com.example.luoling.android_dome.Graphics2D.BallMoveActivity;
 import com.example.luoling.android_dome.Graphics2D.BoomActivity;
 import com.example.luoling.android_dome.Graphics2D.ClipActivity;
@@ -102,6 +103,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("ColorFilter效果", ColorFilterActivity.class));
        mList.add(new Model("图片剪切", ClipActivity.class));
        mList.add(new Model("自定义drawable", DrawbleActivity.class));
+       mList.add(new Model("仿qq消息气泡", DragBubleActivity.class));
        mList.add(new Model("爆炸效果动画", BoomActivity.class));
        mList.add(new Model("自定义时钟", WatchActivity.class));
        mList.add(new Model("写字板", TabletActivity.class));
