@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DragBubble.DragBubleActivity">
+
+
+    <LinearLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green">
+
+        <com.example.luoling.android_dome.DragBubble.DragBubbleView
+            android:id="@+id/dragBubbleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bubble_text="14"
+            app:bubble_radius="12dp"
+            app:bubble_textColor="@color/white"
+            app:bubble_textSize="12sp"
+            app:bubble_color="#ff0000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textColor="#666666"
+        android:text="还原"/>
+
+</RelativeLayout>
