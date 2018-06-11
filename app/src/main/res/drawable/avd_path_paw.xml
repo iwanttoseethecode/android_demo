@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vd_path_paw">
+    <target
+        android:name="toe1"
+        android:animation="@animator/anim_path_morph_toe1"/>
+    <target
+        android:name="toe2"
+        android:animation="@animator/anim_path_morph_toe2"/>
+    <target
+        android:name="toe3"
+        android:animation="@animator/anim_path_morph_toe3"/>
+    <target
+        android:name="toe4"
+        android:animation="@animator/anim_path_morph_toe4"/>
+</animated-vector>

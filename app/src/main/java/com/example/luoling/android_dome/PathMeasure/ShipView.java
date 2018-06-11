@@ -87,7 +87,6 @@ public class ShipView extends View {
             matrix.preTranslate(-mBitmap.getWidth()/2,-mBitmap.getHeight());
             canvas.drawBitmap(mBitmap,matrix,mPaint);
         }
-
         mPath.lineTo(getWidth(),getHeight());
         mPath.lineTo(0,getHeight());
         mPath.close();
