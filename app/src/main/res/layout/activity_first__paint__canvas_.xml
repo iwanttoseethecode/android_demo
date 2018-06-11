@@ -89,9 +89,32 @@
         android:layout_below="@id/btn5"
         android:text="btn12"/>
 
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn9"
+        android:text="btn13"/>
+
+    <Button
+        android:id="@+id/btn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn13"
+        android:layout_below="@id/btn9"
+        android:text="btn14"/>
+
+    <Button
+        android:id="@+id/btn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn14"
+        android:layout_below="@id/btn9"
+        android:text="btn15"/>
+
     <ImageView android:id="@+id/iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/btn9"/>
+        android:layout_below="@+id/btn13"/>
 
 </RelativeLayout>

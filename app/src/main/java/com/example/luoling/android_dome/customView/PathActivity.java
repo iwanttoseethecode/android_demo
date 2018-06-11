@@ -30,7 +30,7 @@ public class PathActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8,R.id.btn9, R.id.btn10, R.id.btn11, R.id.btn12})
+    @OnClick({R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8,R.id.btn9, R.id.btn10, R.id.btn11, R.id.btn12,R.id.btn13,R.id.btn14,R.id.btn15})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn1:
@@ -67,6 +67,16 @@ public class PathActivity extends AppCompatActivity {
                 btn11();
                 break;
             case R.id.btn12:
+                btn12();
+                break;
+            case R.id.btn13:
+                btn13();
+                break;
+            case R.id.btn14:
+                btn14();
+                break;
+            case R.id.btn15:
+                btn15();
                 break;
         }
     }
@@ -265,6 +275,70 @@ public class PathActivity extends AppCompatActivity {
         canvas.drawTextOnPath(text,path,15,15,paint);
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.STROKE);
+        canvas.drawPath(path,paint);
+        iv.setImageBitmap(bmpBuffer);
+    }
+
+    // INVERSE_EVEN_ODD 模式 --- 取path所有未占和相交的区域
+    private void btn12() {
+        Bitmap bmpBuffer = Bitmap.createBitmap(500,500,Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bmpBuffer);
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+        Path path = new Path();
+        path.offset(100,100);
+        path.addCircle(200,200,100,Path.Direction.CW);
+        path.addCircle(300,300,100,Path.Direction.CW);
+        path.setFillType(Path.FillType.INVERSE_EVEN_ODD);
+        canvas.drawPath(path,paint);
+        iv.setImageBitmap(bmpBuffer);
+    }
+
+    // INVERSE_WINDING 模式 -- 取path所有未占的区域
+    private void btn13() {
+        Bitmap bmpBuffer = Bitmap.createBitmap(500,500,Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bmpBuffer);
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+        Path path = new Path();
+        path.offset(100,100);
+        path.addCircle(200,200,100,Path.Direction.CW);
+        path.addCircle(300,300,100,Path.Direction.CW);
+        path.setFillType(Path.FillType.INVERSE_WINDING);
+        canvas.drawPath(path,paint);
+        iv.setImageBitmap(bmpBuffer);
+    }
+
+    // EVEN_ODD 模式 --- 取Path所在不相交的区域
+    private void btn14() {
+        Bitmap bmpBuffer = Bitmap.createBitmap(500,500,Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bmpBuffer);
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+        Path path = new Path();
+        path.offset(100,100);
+        path.addCircle(200,200,100,Path.Direction.CW);
+        path.addCircle(300,300,100,Path.Direction.CW);
+        path.setFillType(Path.FillType.EVEN_ODD);
+        canvas.drawPath(path,paint);
+        iv.setImageBitmap(bmpBuffer);
+    }
+
+    // WINDING 模式 --- 取Path所有所在的区域 -- 默认的模式
+    private void btn15() {
+        Bitmap bmpBuffer = Bitmap.createBitmap(500,500,Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bmpBuffer);
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+        paint.setColor(Color.RED);
+        Path path = new Path();
+        path.offset(100,100);
+        path.addCircle(200,200,100,Path.Direction.CW);
+        path.addCircle(300,300,100,Path.Direction.CW);
+        path.setFillType(Path.FillType.WINDING);
         canvas.drawPath(path,paint);
         iv.setImageBitmap(bmpBuffer);
     }

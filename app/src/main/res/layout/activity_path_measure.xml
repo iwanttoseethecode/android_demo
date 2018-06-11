@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PathMeasure.PathMeasureActivity">
+
+    <Spinner
+        android:id="@+id/selectSpinner"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:entries="@array/pathMeasureUse"/>
+
+    <com.example.luoling.android_dome.PathMeasure.GrabageView
+        android:id="@+id/grabageView"
+        android:layout_below="@id/selectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.example.luoling.android_dome.PathMeasure.PathMeasureBasicView
+        android:id="@+id/pathMeasureView"
+        android:layout_below="@id/selectSpinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.example.luoling.android_dome.PathMeasure.SmileLoadingView
+        android:id="@+id/smileLoadingView"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        />
+
+    <com.example.luoling.android_dome.PathMeasure.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_below="@id/selectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.example.luoling.android_dome.PathMeasure.ShipView
+        android:id="@+id/shipView"
+        android:layout_below="@id/selectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

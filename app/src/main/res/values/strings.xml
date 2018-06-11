@@ -86,4 +86,12 @@
         <item>PorterDuff-绿色src_atop</item>
         <item>PorterDuff-红色src_in</item>
     </string-array>
+
+    <string-array name="pathMeasureUse">
+        <item>垃圾桶</item>
+        <item>PathMeasure基础</item>
+        <item>加载动画</item>
+        <item>加载圈</item>
+        <item>小船飘飘</item>
+    </string-array>
 </resources>
