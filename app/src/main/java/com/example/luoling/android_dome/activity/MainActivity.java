@@ -17,6 +17,7 @@ import com.example.luoling.android_dome.Graphics2D.BoomActivity;
 import com.example.luoling.android_dome.Graphics2D.ClipActivity;
 import com.example.luoling.android_dome.Graphics2D.CoordinateActivity;
 import com.example.luoling.android_dome.Graphics2D.WatchActivity;
+import com.example.luoling.android_dome.PathMeasure.PathMeasureActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
@@ -96,6 +97,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("Paint的详细应用",PaintDetailActivity.class));
        mList.add(new Model("自定义环形进度条",CircleProgressBarActivity.class));
        mList.add(new Model("Path使用", PathActivity.class));
+       mList.add(new Model("PathMeasure使用", PathMeasureActivity.class));
        mList.add(new Model("来回滚动刷新", BallMoveActivity.class));
        mList.add(new Model("坐标转换", CoordinateActivity.class));
        mList.add(new Model("Xformode效果展示",XformodeActivity.class));

@@ -60,7 +60,8 @@
         <activity android:name=".xformode.XformodeDemoActivity" />
         <activity android:name=".colorFilter.ColorFilterActivity" />
         <activity android:name=".drawble.DrawbleActivity" />
-        <activity android:name=".DragBubble.DragBubleActivity"></activity>
+        <activity android:name=".DragBubble.DragBubleActivity" />
+        <activity android:name=".PathMeasure.PathMeasureActivity"></activity>
     </application>
 
 </manifest>
