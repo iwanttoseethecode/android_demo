@@ -62,7 +62,9 @@
         <activity android:name=".drawble.DrawbleActivity" />
         <activity android:name=".DragBubble.DragBubleActivity" />
         <activity android:name=".PathMeasure.PathMeasureActivity" />
-        <activity android:name=".svg.SVGDemoActivity"></activity>
+        <activity android:name=".svg.SVGDemoActivity" />
+        <activity android:name=".svg.SVGChinaMapActivity"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

@@ -92,6 +92,9 @@ public class SVGDemoActivity extends AppCompatActivity {
     }
 
 /*
+
+    svg矢量图转化成xml http://inloop.github.io/svg2android/
+
 * Vector 语法简介
 			通过使用它的Path标签，几乎可以实现SVG中的其它所有标签，虽然可能会复杂一点，
 			但这些东西都是可以通过工具来完成的，所以，不用担心写起来会很复杂。
