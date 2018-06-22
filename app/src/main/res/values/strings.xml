@@ -94,4 +94,11 @@
         <item>加载圈</item>
         <item>小船飘飘</item>
     </string-array>
+
+    <string-array name="PagerTransformer">
+        <item>效果1</item>
+        <item>效果2</item>
+        <item>效果3</item>
+        <item>效果4</item>
+    </string-array>
 </resources>

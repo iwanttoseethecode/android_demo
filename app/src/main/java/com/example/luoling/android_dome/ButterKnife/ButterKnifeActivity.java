@@ -80,11 +80,15 @@ public class ButterKnifeActivity extends FragmentActivity implements View.OnLong
 
     public void init(){
 
+        String iwtd = "1111111";
+        String intd = "1111111";
+        String ihtd = "1111111";
+
         titleTxtView.setText("ButterKnife");
-        dwTxtView.setText("终于用上先进的注解框架了");
+        dwTxtView.setText("iwtd  "+iwtd.length());
         dwbmTxtView.setText("android studio 的确比eclipse好太多了");
-        lxrTxtView.setText("应该编程的效率提高了很多");
-        telTxtView.setText("很好");
+        lxrTxtView.setText("intd  "+intd.length());
+        telTxtView.setText("ihtd  "+ihtd.length());
 
         dwTxtView.setOnLongClickListener(this);
 
