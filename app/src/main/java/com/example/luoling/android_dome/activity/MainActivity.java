@@ -20,6 +20,7 @@ import com.example.luoling.android_dome.Graphics2D.WatchActivity;
 import com.example.luoling.android_dome.PathMeasure.PathMeasureActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
+import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
 import com.example.luoling.android_dome.svg.SVGChinaMapActivity;
 import com.example.luoling.android_dome.svg.SVGDemoActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
@@ -47,6 +48,7 @@ import com.example.luoling.android_dome.propertyAnimaton.CoinActivity;
 import com.example.luoling.android_dome.radar.RadarActivity;
 import com.example.luoling.android_dome.splashAnimation.SplashAnimationActivity;
 import com.example.luoling.android_dome.tagetcricle.TagetCricleActivity;
+import com.example.luoling.android_dome.viewPager3D.ViewPager3DActivity;
 import com.example.luoling.android_dome.xformode.XformodeActivity;
 import com.example.luoling.android_dome.xformode.XformodeDemoActivity;
 
@@ -95,6 +97,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("点赞动画", PraiseActivity.class));
        mList.add(new Model("炫酷的开场动画", SplashAnimationActivity.class));
        mList.add(new Model("滑动海报动画", ScrollPosterActivity.class));
+       mList.add(new Model("viewPager的3D翻转效果", ViewPager3DActivity.class));
        mList.add(new Model("SVG使用及动画", SVGDemoActivity.class));
        mList.add(new Model("SVG中国地图",SVGChinaMapActivity.class));
        mList.add(new Model("Canvas、Paint使用",first_Paint_Canvas_Activity.class));
@@ -120,7 +123,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("自定义控件", Chapter6Activity.class));
        mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
        mList.add(new Model("瀑布流布局", WaterfallActivity.class));
-
+       mList.add(new Model("自定义表单布局", TableActivity.class));
    }
 
     @Override

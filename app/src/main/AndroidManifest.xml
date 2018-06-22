@@ -63,8 +63,11 @@
         <activity android:name=".DragBubble.DragBubleActivity" />
         <activity android:name=".PathMeasure.PathMeasureActivity" />
         <activity android:name=".svg.SVGDemoActivity" />
-        <activity android:name=".svg.SVGChinaMapActivity"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".svg.SVGChinaMapActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".advancedUI.tableLayout.TableActivity" />
+        <activity android:name=".viewPager3D.ViewPager3DActivity"></activity>
     </application>
 
 </manifest>
