@@ -67,7 +67,8 @@
             android:name=".svg.SVGChinaMapActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".advancedUI.tableLayout.TableActivity" />
-        <activity android:name=".viewPager3D.ViewPager3DActivity"></activity>
+        <activity android:name=".viewPager3D.ViewPager3DActivity" />
+        <activity android:name=".camera3D.Camera3DActivity"></activity>
     </application>
 
 </manifest>

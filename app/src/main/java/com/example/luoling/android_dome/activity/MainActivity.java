@@ -21,6 +21,7 @@ import com.example.luoling.android_dome.PathMeasure.PathMeasureActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
 import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
+import com.example.luoling.android_dome.camera3D.Camera3DActivity;
 import com.example.luoling.android_dome.svg.SVGChinaMapActivity;
 import com.example.luoling.android_dome.svg.SVGDemoActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
@@ -124,6 +125,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
        mList.add(new Model("瀑布流布局", WaterfallActivity.class));
        mList.add(new Model("自定义表单布局", TableActivity.class));
+       mList.add(new Model("camera的三维应用", Camera3DActivity.class));
    }
 
     @Override
