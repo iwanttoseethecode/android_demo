@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomDrawerLayout.DrawerLayoutActivity">
+
+    <com.example.luoling.android_dome.CustomDrawerLayout.custom.MyDrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/fake" />
+
+        <com.example.luoling.android_dome.CustomDrawerLayout.custom.MyDrawerSliderMenu
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@color/green"
+            app:maxTranslationX="70dp"
+            android:layout_gravity="start">
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/avft"
+                android:text="朋友圈" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/bubble_frame"
+                android:text="钱包" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/bullseye"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/circle_filled"
+                android:text="竞猜" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@mipmap/bubbles"
+                android:text="设置" />
+
+
+        </com.example.luoling.android_dome.CustomDrawerLayout.custom.MyDrawerSliderMenu>
+
+    </com.example.luoling.android_dome.CustomDrawerLayout.custom.MyDrawerLayout>
+
+</RelativeLayout>

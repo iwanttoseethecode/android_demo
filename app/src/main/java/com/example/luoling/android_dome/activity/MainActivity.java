@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.luoling.android_dome.ButterKnife.ButterKnifeActivity;
+import com.example.luoling.android_dome.CustomDrawerLayout.DrawerLayoutActivity;
 import com.example.luoling.android_dome.DragBubble.DragBubleActivity;
 import com.example.luoling.android_dome.Graphics2D.BallMoveActivity;
 import com.example.luoling.android_dome.Graphics2D.BoomActivity;
@@ -23,13 +24,11 @@ import com.example.luoling.android_dome.RecyclerViewDemo.DragSwipeRecyclerViewAc
 import com.example.luoling.android_dome.RecyclerViewDemo.HeaderFooterRecyclerViewActivity;
 import com.example.luoling.android_dome.RecyclerViewDemo.SwipeCardActivity;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
-import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
-import com.example.luoling.android_dome.camera3D.Camera3DActivity;
-import com.example.luoling.android_dome.svg.SVGChinaMapActivity;
-import com.example.luoling.android_dome.svg.SVGDemoActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
 import com.example.luoling.android_dome.advancedUI.flowlayout.FlowLayoutActivity;
+import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
 import com.example.luoling.android_dome.advancedUI.waterfallLayout.WaterfallActivity;
+import com.example.luoling.android_dome.camera3D.Camera3DActivity;
 import com.example.luoling.android_dome.chapter5.After5_4Activity;
 import com.example.luoling.android_dome.chapter5.ShadowActivity;
 import com.example.luoling.android_dome.chapter6.Chapter6Activity;
@@ -51,6 +50,8 @@ import com.example.luoling.android_dome.propertyAnimaton.ChangeLayoutActivity;
 import com.example.luoling.android_dome.propertyAnimaton.CoinActivity;
 import com.example.luoling.android_dome.radar.RadarActivity;
 import com.example.luoling.android_dome.splashAnimation.SplashAnimationActivity;
+import com.example.luoling.android_dome.svg.SVGChinaMapActivity;
+import com.example.luoling.android_dome.svg.SVGDemoActivity;
 import com.example.luoling.android_dome.tagetcricle.TagetCricleActivity;
 import com.example.luoling.android_dome.viewPager3D.ViewPager3DActivity;
 import com.example.luoling.android_dome.xformode.XformodeActivity;
@@ -132,6 +133,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("RecyclerView添加头部和尾部的应用",HeaderFooterRecyclerViewActivity.class));
        mList.add(new Model("RecyclerView拖拽侧滑", DragSwipeRecyclerViewActivity.class));
        mList.add(new Model("RecyclerView仿探探侧滑图片浏览", SwipeCardActivity.class));
+       mList.add(new Model("自定义贝塞尔drawerLayout", DrawerLayoutActivity.class));
    }
 
     @Override

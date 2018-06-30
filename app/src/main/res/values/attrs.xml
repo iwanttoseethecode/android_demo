@@ -23,4 +23,8 @@
         <attr name="bubble_textSize" format="dimension"/>
         <attr name="bubble_textColor" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="SiderMenu">
+        <attr name="maxTranslationX" format="dimension"/>
+    </declare-styleable>
 </resources>

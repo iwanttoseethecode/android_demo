@@ -12,6 +12,7 @@
     <color name="aqua">#02d1ac</color>
     <color name="yellow">#ffd200</color>
     <color name="purple">#a430a8</color>
+    <color name="grey">#555555</color>
 
     <array name="splash_circle_colors">
         <item>@color/blue</item>
