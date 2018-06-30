@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.luoling.android_dome">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -74,7 +74,8 @@
         <activity android:name=".RecyclerViewDemo.HeaderFooterRecyclerViewActivity" />
         <activity android:name=".RecyclerViewDemo.RecyclerViewScrollIssueActivity" />
         <activity android:name=".RecyclerViewDemo.DragSwipeRecyclerViewActivity" />
-        <activity android:name=".RecyclerViewDemo.SwipeCardActivity"></activity>
+        <activity android:name=".RecyclerViewDemo.SwipeCardActivity" />
+        <activity android:name=".CustomDrawerLayout.DrawerLayoutActivity"></activity>
     </application>
 
 </manifest>
