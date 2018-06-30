@@ -21,6 +21,7 @@ import com.example.luoling.android_dome.PathMeasure.PathMeasureActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RecyclerViewDemo.DragSwipeRecyclerViewActivity;
 import com.example.luoling.android_dome.RecyclerViewDemo.HeaderFooterRecyclerViewActivity;
+import com.example.luoling.android_dome.RecyclerViewDemo.SwipeCardActivity;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
 import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
 import com.example.luoling.android_dome.camera3D.Camera3DActivity;
@@ -130,6 +131,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("camera的三维应用", Camera3DActivity.class));
        mList.add(new Model("RecyclerView添加头部和尾部的应用",HeaderFooterRecyclerViewActivity.class));
        mList.add(new Model("RecyclerView拖拽侧滑", DragSwipeRecyclerViewActivity.class));
+       mList.add(new Model("RecyclerView仿探探侧滑图片浏览", SwipeCardActivity.class));
    }
 
     @Override
