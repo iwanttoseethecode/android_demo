@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.luoling.android_dome">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -71,7 +73,8 @@
         <activity android:name=".camera3D.Camera3DActivity" />
         <activity android:name=".RecyclerViewDemo.HeaderFooterRecyclerViewActivity" />
         <activity android:name=".RecyclerViewDemo.RecyclerViewScrollIssueActivity" />
-        <activity android:name=".RecyclerViewDemo.DragSwipeRecyclerViewActivity"></activity>
+        <activity android:name=".RecyclerViewDemo.DragSwipeRecyclerViewActivity" />
+        <activity android:name=".RecyclerViewDemo.SwipeCardActivity"></activity>
     </application>
 
 </manifest>
