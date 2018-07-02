@@ -91,9 +91,16 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
     }
 
    public void addModel(){
-       mList.add(new Model("注解框架ButterKnife", ButterKnifeActivity.class));
-       mList.add(new Model("网络框架之OkHttp", OkhttpStudyActivity.class));
-       mList.add(new Model("网络框架之Retrofit", RetrofitActivity.class));
+       mList.add(new Model("自定义控件", Chapter6Activity.class));
+       mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
+       mList.add(new Model("瀑布流布局", WaterfallActivity.class));
+       mList.add(new Model("camera的三维应用", Camera3DActivity.class));
+       mList.add(new Model("RecyclerView添加头部和尾部的应用",HeaderFooterRecyclerViewActivity.class));
+       mList.add(new Model("RecyclerView拖拽侧滑", DragSwipeRecyclerViewActivity.class));
+       mList.add(new Model("RecyclerView仿探探侧滑图片浏览", SwipeCardActivity.class));
+       mList.add(new Model("自定义贝塞尔drawerLayout", DrawerLayoutActivity.class));
+       mList.add(new Model("Tablayout和Palette打造风格统一的首页", TabLayoutActivity.class));
+//       mList.add(new Model("自定义表单布局", TableActivity.class));
        mList.add(new Model("自定义靶心视图",TagetCricleActivity.class));
        mList.add(new Model("布局变换动画", ChangeLayoutActivity.class));
        mList.add(new Model("硬币动画视图", CoinActivity.class));
@@ -125,16 +132,9 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("阴影", ShadowActivity.class));
        mList.add(new Model("雷达扫描和水波纹按钮",RadarActivity.class));
        mList.add(new Model("图层", After5_4Activity.class));
-       mList.add(new Model("自定义控件", Chapter6Activity.class));
-       mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
-       mList.add(new Model("瀑布流布局", WaterfallActivity.class));
-//       mList.add(new Model("自定义表单布局", TableActivity.class));
-       mList.add(new Model("camera的三维应用", Camera3DActivity.class));
-       mList.add(new Model("RecyclerView添加头部和尾部的应用",HeaderFooterRecyclerViewActivity.class));
-       mList.add(new Model("RecyclerView拖拽侧滑", DragSwipeRecyclerViewActivity.class));
-       mList.add(new Model("RecyclerView仿探探侧滑图片浏览", SwipeCardActivity.class));
-       mList.add(new Model("自定义贝塞尔drawerLayout", DrawerLayoutActivity.class));
-       mList.add(new Model("Tablayout和Palette打造风格统一的首页", TabLayoutActivity.class));
+       mList.add(new Model("注解框架ButterKnife", ButterKnifeActivity.class));
+       mList.add(new Model("网络框架之OkHttp", OkhttpStudyActivity.class));
+       mList.add(new Model("网络框架之Retrofit", RetrofitActivity.class));
    }
 
     @Override
