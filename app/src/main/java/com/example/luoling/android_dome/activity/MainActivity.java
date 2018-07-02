@@ -26,7 +26,6 @@ import com.example.luoling.android_dome.RecyclerViewDemo.SwipeCardActivity;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
 import com.example.luoling.android_dome.advancedUI.flowlayout.FlowLayoutActivity;
-import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
 import com.example.luoling.android_dome.advancedUI.waterfallLayout.WaterfallActivity;
 import com.example.luoling.android_dome.camera3D.Camera3DActivity;
 import com.example.luoling.android_dome.chapter5.After5_4Activity;
@@ -52,6 +51,7 @@ import com.example.luoling.android_dome.radar.RadarActivity;
 import com.example.luoling.android_dome.splashAnimation.SplashAnimationActivity;
 import com.example.luoling.android_dome.svg.SVGChinaMapActivity;
 import com.example.luoling.android_dome.svg.SVGDemoActivity;
+import com.example.luoling.android_dome.tablayout.TabLayoutActivity;
 import com.example.luoling.android_dome.tagetcricle.TagetCricleActivity;
 import com.example.luoling.android_dome.viewPager3D.ViewPager3DActivity;
 import com.example.luoling.android_dome.xformode.XformodeActivity;
@@ -128,12 +128,13 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("自定义控件", Chapter6Activity.class));
        mList.add(new Model("自定义流式布局", FlowLayoutActivity.class));
        mList.add(new Model("瀑布流布局", WaterfallActivity.class));
-       mList.add(new Model("自定义表单布局", TableActivity.class));
+//       mList.add(new Model("自定义表单布局", TableActivity.class));
        mList.add(new Model("camera的三维应用", Camera3DActivity.class));
        mList.add(new Model("RecyclerView添加头部和尾部的应用",HeaderFooterRecyclerViewActivity.class));
        mList.add(new Model("RecyclerView拖拽侧滑", DragSwipeRecyclerViewActivity.class));
        mList.add(new Model("RecyclerView仿探探侧滑图片浏览", SwipeCardActivity.class));
        mList.add(new Model("自定义贝塞尔drawerLayout", DrawerLayoutActivity.class));
+       mList.add(new Model("Tablayout和Palette打造风格统一的首页", TabLayoutActivity.class));
    }
 
     @Override

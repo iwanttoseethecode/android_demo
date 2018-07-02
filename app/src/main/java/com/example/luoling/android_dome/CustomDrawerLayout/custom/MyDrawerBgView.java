@@ -2,10 +2,11 @@ package com.example.luoling.android_dome.CustomDrawerLayout.custom;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.Region;
+import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -19,6 +20,7 @@ public class MyDrawerBgView extends View {
     private Path path;
     private BitmapDrawable bgDrawable;
     private Bitmap bgbitmap;
+    private Shader shader;
 
     public MyDrawerBgView(Context context) {
         this(context, null);
@@ -55,14 +57,18 @@ public class MyDrawerBgView extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
         if (bgDrawable != null) {
-            canvas.drawBitmap(bgbitmap, 0, 0, paint);
-            canvas.clipPath(path, Region.Op.REPLACE);
-        } else {
-            canvas.drawPath(path, paint);
+            bgbitmap = bgDrawable.getBitmap();
+            shader = new BitmapShader(bgbitmap, Shader.TileMode.CLAMP,Shader.TileMode.CLAMP);
+            paint.setShader(shader);
         }
+    }
 
+    @Override
+    protected void onDraw(Canvas canvas) {
+        canvas.drawPath(path, paint);
     }
 
     /**
@@ -81,9 +87,6 @@ public class MyDrawerBgView extends View {
         } else if (color instanceof BitmapDrawable) {
             //实现背景图片 的  变换
             bgDrawable = (BitmapDrawable) color;
-            if (bgDrawable != null) {
-                bgbitmap = bgDrawable.getBitmap();
-            }
         }
     }
 
