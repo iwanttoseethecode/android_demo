@@ -18,6 +18,7 @@ import com.example.luoling.android_dome.Graphics2D.BoomActivity;
 import com.example.luoling.android_dome.Graphics2D.ClipActivity;
 import com.example.luoling.android_dome.Graphics2D.CoordinateActivity;
 import com.example.luoling.android_dome.Graphics2D.WatchActivity;
+import com.example.luoling.android_dome.MyWindow.MyWindowActivity;
 import com.example.luoling.android_dome.PathMeasure.PathMeasureActivity;
 import com.example.luoling.android_dome.R;
 import com.example.luoling.android_dome.RecyclerViewDemo.DragSwipeRecyclerViewActivity;
@@ -87,7 +88,6 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
     @Override
     public void onStart() {
         super.onStart();
-
     }
 
    public void addModel(){
@@ -135,6 +135,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("注解框架ButterKnife", ButterKnifeActivity.class));
        mList.add(new Model("网络框架之OkHttp", OkhttpStudyActivity.class));
        mList.add(new Model("网络框架之Retrofit", RetrofitActivity.class));
+       mList.add(new Model("添加子window", MyWindowActivity.class));
    }
 
     @Override
