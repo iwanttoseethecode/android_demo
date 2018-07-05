@@ -76,7 +76,8 @@
         <activity android:name=".RecyclerViewDemo.DragSwipeRecyclerViewActivity" />
         <activity android:name=".RecyclerViewDemo.SwipeCardActivity" />
         <activity android:name=".CustomDrawerLayout.DrawerLayoutActivity" />
-        <activity android:name=".tablayout.TabLayoutActivity"></activity>
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".MyWindow.MyWindowActivity"></activity>
     </application>
 
 </manifest>
