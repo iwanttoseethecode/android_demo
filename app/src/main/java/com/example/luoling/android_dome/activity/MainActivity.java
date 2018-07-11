@@ -28,6 +28,7 @@ import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
 import com.example.luoling.android_dome.advancedUI.flowlayout.FlowLayoutActivity;
 import com.example.luoling.android_dome.advancedUI.waterfallLayout.WaterfallActivity;
+import com.example.luoling.android_dome.appbar.AppBarActivity;
 import com.example.luoling.android_dome.camera3D.Camera3DActivity;
 import com.example.luoling.android_dome.chapter5.After5_4Activity;
 import com.example.luoling.android_dome.chapter5.ShadowActivity;
@@ -42,6 +43,7 @@ import com.example.luoling.android_dome.customView.first_Paint_Canvas_Activity;
 import com.example.luoling.android_dome.doublecache.DrawRectActivity;
 import com.example.luoling.android_dome.doublecache.TabletActivity;
 import com.example.luoling.android_dome.drawble.DrawbleActivity;
+import com.example.luoling.android_dome.fabBehavior.FabbActivity;
 import com.example.luoling.android_dome.newAnimation.AnimationActivity;
 import com.example.luoling.android_dome.newAnimation.OverPageActivity;
 import com.example.luoling.android_dome.okhttpdome.OkhttpStudyActivity;
@@ -136,6 +138,8 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("网络框架之OkHttp", OkhttpStudyActivity.class));
        mList.add(new Model("网络框架之Retrofit", RetrofitActivity.class));
        mList.add(new Model("添加子window", MyWindowActivity.class));
+       mList.add(new Model("FloatingActionButtonBehavior", FabbActivity.class));
+       mList.add(new Model("可折叠效果的appbarLayout", AppBarActivity.class));
    }
 
     @Override

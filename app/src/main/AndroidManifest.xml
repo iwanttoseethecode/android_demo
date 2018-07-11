@@ -77,7 +77,9 @@
         <activity android:name=".RecyclerViewDemo.SwipeCardActivity" />
         <activity android:name=".CustomDrawerLayout.DrawerLayoutActivity" />
         <activity android:name=".tablayout.TabLayoutActivity" />
-        <activity android:name=".MyWindow.MyWindowActivity"></activity>
+        <activity android:name=".MyWindow.MyWindowActivity" />
+        <activity android:name=".fabBehavior.FabbActivity" />
+        <activity android:name=".appbar.AppBarActivity"></activity>
     </application>
 
 </manifest>
