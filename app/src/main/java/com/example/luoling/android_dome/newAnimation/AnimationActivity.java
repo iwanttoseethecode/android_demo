@@ -60,13 +60,13 @@ public class AnimationActivity extends Activity implements View.OnClickListener 
                 btn2ObjectAnimator.start();
                 break;
             case R.id.btn3:
-//                ObjectAnimator btn3ObjectAnimator = ObjectAnimator.ofArgb(btn3,"backgroundColor",getResources().getColor(android.R.color.holo_blue_bright),getResources().getColor(android.R.color.holo_red_dark));
-//                //设置无限循环，设置模式ValueAnimator.REVERSE表示反向播放,ValueAnimator.RESTART表示从头播放
-//                btn3ObjectAnimator.setRepeatCount(ValueAnimator.INFINITE);
-//                //设置反转效果
-//                btn3ObjectAnimator.setRepeatMode(ValueAnimator.REVERSE);
-//                btn3ObjectAnimator.setDuration(2000);
-//                btn3ObjectAnimator.start();
+                ObjectAnimator btn3ObjectAnimator = ObjectAnimator.ofArgb(btn3,"backgroundColor",getResources().getColor(android.R.color.holo_blue_bright),getResources().getColor(android.R.color.holo_red_dark));
+                //设置无限循环，设置模式ValueAnimator.REVERSE表示反向播放,ValueAnimator.RESTART表示从头播放
+                btn3ObjectAnimator.setRepeatCount(ValueAnimator.INFINITE);
+                //设置反转效果
+                btn3ObjectAnimator.setRepeatMode(ValueAnimator.REVERSE);
+                btn3ObjectAnimator.setDuration(2000);
+                btn3ObjectAnimator.start();
                 break;
             case R.id.btn4:
                 ObjectAnimator.ofFloat(btn4,"alpha",0f,1f).setDuration(2000).start();
@@ -78,8 +78,8 @@ public class AnimationActivity extends Activity implements View.OnClickListener 
                         ObjectAnimator.ofFloat(btn5,"rotation",0,360,0),
                         ObjectAnimator.ofFloat(btn5,"scaleX",0,1,1.5f,1),
                         ObjectAnimator.ofFloat(btn5,"scaleY",0,1,1.5f,1),
-                        ObjectAnimator.ofFloat(btn5,"translationX",0,200f),
-                        ObjectAnimator.ofFloat(btn5,"translationY",0,100f));
+                        ObjectAnimator.ofFloat(btn5,"translationX",0,200f,0),
+                        ObjectAnimator.ofFloat(btn5,"translationY",0,100f,0));
                 animatorSet.setDuration(5000);
                 animatorSet.start();
                 break;

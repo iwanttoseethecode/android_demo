@@ -249,7 +249,6 @@ public class DragBubbleView extends View {
                     }else{
                         mBubbleState = BUBBLE_STATE_DEFAUL;
                     }
-
                 }
             }
             break;
@@ -280,7 +279,6 @@ public class DragBubbleView extends View {
             {
                 if(mBubbleState == BUBBLE_STATE_CONNECT){
                     startBubbleResetAnim();
-
                 }else if(mBubbleState == BUBBLE_STATE_APART){
                     if(mDist < 2 * mBubbleRadius){
                         startBubbleResetAnim();
@@ -378,7 +376,7 @@ public class DragBubbleView extends View {
             // 画上半弧
             mBezierPath.moveTo(iBubStillStartX,iBubStillStartY);
             mBezierPath.quadTo(iAnchorX,iAnchorY,iBubMoveableEndX,iBubMoveableEndY);
-            // 画上半弧
+            // 画下半弧
             mBezierPath.lineTo(iBubMoveableStartX,iBubMoveableStartY);
             mBezierPath.quadTo(iAnchorX,iAnchorY,iBubStillEndX,iBubStillEndY);
             mBezierPath.close();

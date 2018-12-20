@@ -18,15 +18,19 @@ public class BullsEyeView extends View {
     private float mRadius;
 
     public BullsEyeView(Context context) {
-        super(context);
+        this(context,null);
     }
 
     public BullsEyeView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs,0);
     }
 
     public BullsEyeView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
+    }
+
+    public void init(){
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setStyle(Paint.Style.FILL);
         mCenter = new Point();
@@ -89,7 +93,7 @@ public class BullsEyeView extends View {
         mPaint.setColor(Color.WHITE);
         canvas.drawCircle(mCenter.x,mCenter.y,mRadius * 0.4f,mPaint);
 
-        mPaint.setColor(Color.WHITE);
+        mPaint.setColor(Color.RED);
         canvas.drawCircle(mCenter.x,mCenter.y,mRadius * 0.1f,mPaint);
     }
 }

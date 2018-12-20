@@ -44,7 +44,6 @@ public class XformodeShowView extends View {
             new PorterDuffXfermode(PorterDuff.Mode.LIGHTEN),
             new PorterDuffXfermode(PorterDuff.Mode.MULTIPLY),
             new PorterDuffXfermode(PorterDuff.Mode.SCREEN)
-
     };
 
     private static final String[] sLabels = {

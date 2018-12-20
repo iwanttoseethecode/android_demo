@@ -9,7 +9,7 @@
         android:valueTo="360"
         android:valueType="floatType"
         android:repeatMode="restart"
-        android:repeatCount="8"/>
+        android:repeatCount="4"/>
 
     <objectAnimator
         android:propertyName="translationY"

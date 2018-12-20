@@ -138,7 +138,7 @@ public class PathActivity extends AppCompatActivity {
         canvas.drawPoints(new float[]{100, 100, 200, 10, 300, 300}, paint);
         //绘制三阶赛贝尔曲线
         path.moveTo(100, 400);
-        path.cubicTo(200, 250, 260, 200, 450, 550);
+        path.cubicTo(200, 250, 260, 400, 450, 550);
         canvas.drawPath(path, paint);
         iv.setImageBitmap(bmpBuffer);
     }

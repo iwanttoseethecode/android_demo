@@ -52,7 +52,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 
         setToolBarStyle(toolbar);
 
-        toolbar.setTitle("动脑学院");
+        toolbar.setTitle("安静苦笑");
         //顺序非常重要  设置 文字 样式调用setSupportActionBar  之前     设置监听在 setSupportActionBar之后
         setSupportActionBar(toolbar);
 
@@ -234,7 +234,6 @@ public class TabLayoutActivity extends AppCompatActivity {
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
         }
-
 
         return height;
     }

@@ -171,7 +171,7 @@ public class SplashView extends View{
                     invalidate();
                 }
             });
-            valueAnimator.setDuration(2800);
+            valueAnimator.setDuration(2000);
             valueAnimator.setRepeatCount(ValueAnimator.INFINITE);
             valueAnimator.start();
         }

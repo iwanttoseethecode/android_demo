@@ -37,6 +37,7 @@ public class EraserView extends View {
         mBitPaint = new Paint();
         mBitPaint.setColor(Color.RED);
         mBitPaint.setStyle(Paint.Style.STROKE);
+        mBitPaint.setStrokeCap(Paint.Cap.ROUND);
         mBitPaint.setStrokeWidth(45);
 
         BmpSrc = BitmapFactory.decodeResource(getResources(), R.mipmap.p4);

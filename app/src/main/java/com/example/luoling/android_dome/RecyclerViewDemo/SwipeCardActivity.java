@@ -76,6 +76,7 @@ public class SwipeCardActivity extends AppCompatActivity {
     class SwipeCardBean{
         private String url;
         private String name;
+        private int position;
 
         public int getPosition() {
             return position;
@@ -84,8 +85,6 @@ public class SwipeCardActivity extends AppCompatActivity {
         public void setPosition(int position) {
             this.position = position;
         }
-
-        private int position;
 
         public SwipeCardBean(int position,String url, String name) {
             this.url = url;

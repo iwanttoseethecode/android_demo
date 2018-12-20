@@ -26,6 +26,8 @@ public class PathMeasureActivity extends AppCompatActivity implements AdapterVie
     LoadingView loadingView;
     @BindView(R.id.shipView)
     ShipView shipView;
+    @BindView(R.id.headView)
+    HeadView headView;
 
     private SparseArray<View> sparseArray;
 
@@ -45,6 +47,7 @@ public class PathMeasureActivity extends AppCompatActivity implements AdapterVie
         sparseArray.put(2, smileLoadingView);
         sparseArray.put(3, loadingView);
         sparseArray.put(4, shipView);
+        sparseArray.put(5, headView);
     }
 
     private void setVisible(int num) {
@@ -70,6 +73,8 @@ public class PathMeasureActivity extends AppCompatActivity implements AdapterVie
             setVisible(3);
         } else if (name.equals("小船飘飘")) {
             setVisible(4);
+        } else if (name.equals("头部空间")){
+            setVisible(5);
         }
     }
 
