@@ -80,7 +80,9 @@
         <activity android:name=".MyWindow.MyWindowActivity" />
         <activity android:name=".fabBehavior.FabbActivity" />
         <activity android:name=".appbar.AppBarActivity" />
-        <activity android:name=".customCoordinator.CustomCoordinatorLayoutActivity"></activity>
+        <activity android:name=".customCoordinator.CustomCoordinatorLayoutActivity" />
+        <activity android:name=".sceneTransition.SceneTransOneActivity" />
+        <activity android:name=".sceneTransition.SceneTransTwoActivity"></activity>
     </application>
 
 </manifest>

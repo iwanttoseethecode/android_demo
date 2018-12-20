@@ -53,6 +53,7 @@ import com.example.luoling.android_dome.praise.PraiseActivity;
 import com.example.luoling.android_dome.propertyAnimaton.ChangeLayoutActivity;
 import com.example.luoling.android_dome.propertyAnimaton.CoinActivity;
 import com.example.luoling.android_dome.radar.RadarActivity;
+import com.example.luoling.android_dome.sceneTransition.SceneTransOneActivity;
 import com.example.luoling.android_dome.splashAnimation.SplashAnimationActivity;
 import com.example.luoling.android_dome.svg.SVGChinaMapActivity;
 import com.example.luoling.android_dome.svg.SVGDemoActivity;
@@ -143,6 +144,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("FloatingActionButtonBehavior", FabbActivity.class));
        mList.add(new Model("可折叠效果的appbarLayout", AppBarActivity.class));
        mList.add(new Model("自定义CoordinatorLayout", CustomCoordinatorLayoutActivity.class));
+       mList.add(new Model("materialDesign转场动画", SceneTransOneActivity.class));
    }
 
     @Override

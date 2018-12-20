@@ -3,6 +3,9 @@
     <string name="title_activity_main1111">Main1111Activity</string>
     <string name="title_activity_draw_pic">DrawPicActivity</string>
 
+    <string name="scene_trans_1">scene_trans_1</string>
+    <string name="scene_trans_2">scene_trans_2</string>
+
     <string name="open">打开</string>
     <string name="close">关闭</string>
 

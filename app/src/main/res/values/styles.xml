@@ -9,6 +9,12 @@
         <!--設置导航栏和状态栏透明沉浸效果-->
         <!--<item name="android:windowTranslucentNavigation">true</item>-->
         <!--<item name="android:windowTranslucentStatus">true</item>-->
+
+        <!--允许自定义专场动画-->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/pager_in_out</item>
+        <item name="android:windowSharedElementExitTransition">@transition/pager_in_out</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
