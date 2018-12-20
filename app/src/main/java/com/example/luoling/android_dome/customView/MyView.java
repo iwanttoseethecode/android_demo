@@ -198,6 +198,7 @@ public class MyView extends View {
         path.lineTo(700,900);
 
         canvas.drawPath(path,paint);
+
         paint.setColor(Color.RED);
         paint.setPathEffect(new CornerPathEffect(100));
         canvas.drawPath(path,paint);

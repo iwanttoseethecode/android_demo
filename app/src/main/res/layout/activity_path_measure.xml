@@ -49,4 +49,22 @@
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
+    <com.example.luoling.android_dome.PathMeasure.HeadView
+        android:id="@+id/headView"
+        android:layout_below="@id/selectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:besselViewBackGround="@mipmap/headview_bg"
+        app:numberText="2321434"
+        app:numberTextColor="@color/white"
+        app:numberTextSize="28sp"
+        app:unitText="分"
+        app:unitTextColor="@color/white"
+        app:unitTextSize="14sp"
+        app:describeText="无形之刃，最为致命;无形之刃，最为致命"
+        app:describeTextColor="@color/white"
+        app:describeTextSize="14sp"/>
+
 </RelativeLayout>

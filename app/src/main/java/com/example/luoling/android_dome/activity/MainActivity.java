@@ -27,6 +27,7 @@ import com.example.luoling.android_dome.RecyclerViewDemo.SwipeCardActivity;
 import com.example.luoling.android_dome.RetrofitDemo.RetrofitActivity;
 import com.example.luoling.android_dome.ScrollPoster.ScrollPosterActivity;
 import com.example.luoling.android_dome.advancedUI.flowlayout.FlowLayoutActivity;
+import com.example.luoling.android_dome.advancedUI.tableLayout.TableActivity;
 import com.example.luoling.android_dome.advancedUI.waterfallLayout.WaterfallActivity;
 import com.example.luoling.android_dome.appbar.AppBarActivity;
 import com.example.luoling.android_dome.camera3D.Camera3DActivity;
@@ -37,6 +38,7 @@ import com.example.luoling.android_dome.circleprogressbar.CircleProgressBarActiv
 import com.example.luoling.android_dome.colorFilter.ColorFilterActivity;
 import com.example.luoling.android_dome.commondapter.CommonAdapter;
 import com.example.luoling.android_dome.commondapter.ViewHolder;
+import com.example.luoling.android_dome.customCoordinator.CustomCoordinatorLayoutActivity;
 import com.example.luoling.android_dome.customView.PaintDetailActivity;
 import com.example.luoling.android_dome.customView.PathActivity;
 import com.example.luoling.android_dome.customView.first_Paint_Canvas_Activity;
@@ -102,7 +104,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("RecyclerView仿探探侧滑图片浏览", SwipeCardActivity.class));
        mList.add(new Model("自定义贝塞尔drawerLayout", DrawerLayoutActivity.class));
        mList.add(new Model("Tablayout和Palette打造风格统一的首页", TabLayoutActivity.class));
-//       mList.add(new Model("自定义表单布局", TableActivity.class));
+       mList.add(new Model("自定义表单布局", TableActivity.class));
        mList.add(new Model("自定义靶心视图",TagetCricleActivity.class));
        mList.add(new Model("布局变换动画", ChangeLayoutActivity.class));
        mList.add(new Model("硬币动画视图", CoinActivity.class));
@@ -140,6 +142,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
        mList.add(new Model("添加子window", MyWindowActivity.class));
        mList.add(new Model("FloatingActionButtonBehavior", FabbActivity.class));
        mList.add(new Model("可折叠效果的appbarLayout", AppBarActivity.class));
+       mList.add(new Model("自定义CoordinatorLayout", CustomCoordinatorLayoutActivity.class));
    }
 
     @Override

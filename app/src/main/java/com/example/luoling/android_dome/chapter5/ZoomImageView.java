@@ -48,7 +48,7 @@ public class ZoomImageView extends View {
 
         mShapeDrawable = new ShapeDrawable(new OvalShape());
         mShapeDrawable.getPaint().setShader(bitmapShader);
-        mShapeDrawable.setBounds(0,0,RADIUS * 2,RADIUS * 2);
+        mShapeDrawable.setBounds(0,0,RADIUS * FACTOR,RADIUS * FACTOR);
         matrix = new Matrix();
     }
 

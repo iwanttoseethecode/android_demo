@@ -27,4 +27,21 @@
     <declare-styleable name="SiderMenu">
         <attr name="maxTranslationX" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="HeadView">
+        <attr name="besselViewBackGround" format="reference"/>
+        <attr name="numberText" format="string"/>
+        <attr name="numberTextColor" format="color"/>
+        <attr name="numberTextSize"  format="dimension"/>
+        <attr name="unitText"  format="string"/>
+        <attr name="unitTextColor"  format="color"/>
+        <attr name="unitTextSize"   format="dimension"/>
+        <attr name="describeText"  format="string"/>
+        <attr name="describeTextColor"  format="color"/>
+        <attr name="describeTextSize"   format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomCoordinatorLayout">
+        <attr name="layout_behavior" format="string"/>
+    </declare-styleable>
 </resources>

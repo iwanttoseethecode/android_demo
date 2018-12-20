@@ -16,13 +16,13 @@
             android:src="@mipmap/fake" />
 
         <com.example.luoling.android_dome.CustomDrawerLayout.custom.MyDrawerSliderMenu
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@mipmap/bg"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:background="@mipmap/bg"
-            app:maxTranslationX="70dp"
-            android:layout_gravity="start">
+            app:maxTranslationX="70dp">
 
             <TextView
                 style="@style/MenuText"

@@ -67,6 +67,6 @@ public class MyLinearLayout extends LinearLayout {
     }
 
     private boolean isDiscrollvable(MyLayoutParams p){
-        return p.mDiscrollveAlpha || p.mDiscrollveScaleX || p.mDiscrollveScaleY || p.mDiscrollveTranslation!=-1 || (p.mDiscrollveFromBgColor != -1 && p.mDiscrollveToBgColor != -1);
+        return p.mDiscrollveAlpha || p.mDiscrollveScaleX || p.mDiscrollveScaleY || p.mDiscrollveTranslation!=-1 || (p.mDiscrollveFromBgColor != 0 && p.mDiscrollveToBgColor != 0);
     }
 }
